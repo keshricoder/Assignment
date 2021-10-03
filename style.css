@@ -1,0 +1,257 @@
+/* Google Font Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: #F2F2F2;
+    padding: 8px 15px;
+    z-index: 99;
+    padding-bottom: 20px;
+}
+
+.brand {
+    margin-top: 20px;
+    text-align: center;
+    color: #20120a;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-list {
+    margin: 20% 10%;
+    height: 100%;
+    padding: 8px 25px;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav-list li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #20120a;
+    line-height: 3;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Noto', sans-serif;
+}
+
+.nav-list li button {
+    background: rgb(245, 104, 69);
+    width: 110px;
+    height: 40px;
+    margin-top: 10%;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 80%;
+}
+
+.heading {
+    margin: 20px;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.heading h1 {
+    font-size: 58px;
+    text-align: left;
+    font-family: 'Abril Fatface';
+}
+
+.heading2 {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 150px;
+    width: 180px;
+    line-height: 1.5;
+}
+
+hr {
+    width: 60px;
+    position: absolute;
+    top: 100%;
+    height: 4px;
+    margin-top: 5px;
+    border: 2px solid rgb(247, 64, 40);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+
+.card {
+    width: 170px;
+    height: 190px;
+    background: #fff;
+    margin-bottom: 50px;
+    border: 1px solid rgb(248, 247, 247);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+    width: 60%;
+    height: auto;
+    margin: 20px 35px;
+    border-radius: 50%;
+}
+
+.card-body {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        position: static;
+        max-width: 500px;
+        min-width: 400px;
+    }
+    .heading {
+        margin: 20px;
+        margin-left: 0px;
+        padding: 10px 20px;
+    }
+    .heading h1 {
+        font-size: 30px;
+        font-family: 'Abril Fatface', cursive;
+    }
+    .heading p {
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 150px;
+    }
+    .card {
+        width: 180px;
+        height: 210px;
+        background: #fff;
+        margin-bottom: 50px;
+        border: 1px solid rgb(248, 247, 247);
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.4);
+    }
+    .card-img {
+        width: 60%;
+        height: auto;
+        margin: 20px 35px;
+        border-radius: 50%;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+    }
+    .heading2 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    hr {
+        width: 60px;
+        position: absolute;
+        top: 100%;
+        height: 4px;
+        border: 2px solid rgb(247, 64, 40);
+    }
+    .item5 {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 500px;
+        min-width: 400px;
+    }
+    .navbar h3 {
+        font-size: 20px;
+        font-family: 'Abril Fatface', cursive;
+    }
+    /*mobile view side bar css start*/
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        background: #F2F2F2;
+        padding: 6px 14px;
+        z-index: 99;
+        padding-bottom: 20px;
+        transform: translateX(-100%);
+        transition: all ease 0.25s;
+    }
+    .open {
+        transform: translateX(0);
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 10;
+    }
+    .openoverlay {
+        display: block;
+    }
+    /*mobile view side bar css end*/
+}
